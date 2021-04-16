@@ -1,0 +1,52 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LadyBrandData</title>
+  </head>
+  <body>
+    <header>
+          <h1>LADY AESTHETIC BRAND</h1>
+          <hr>
+          <a href="javascript:history.back()">Go back</a>
+    </header>
+    <h2>Payment form</h2>
+    <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+     <!-- Integracion -->
+     <input name="merchantId"    type="hidden"  value="508029"   >
+     <input name="accountId"     type="hidden"  value="512321" >
+     <input name="description"   type="hidden"  value="Two shirts"  >
+     <input name="referenceCode" type="hidden"  value="LadyAesthetic" >
+     <input name="amount"        type="hidden"  value="20000"   >
+     <input name="tax"           type="hidden"  value="3193"  >
+     <input name="taxReturnBase" type="hidden"  value="16806" >
+     <input name="currency"      type="hidden"  value="COP" >
+     <input name="signature"     type="hidden"  value="6d6fdfab8c7bfa454205e98c41f71424"  >
+     <input name="test"          type="hidden"  value="0" >
+     <input name="buyerEmail"    type="hidden"  value="test@test.com" >
+     <input name="responseUrl"    type="hidden"  value="http://www.test.com/response" >
+     <input name="confirmationUrl"    type="hidden"  value="http://www.test.com/confirmation" >
+    <!-- Informacion -->
+    <pre><label for="n">Name:</label>
+    <input type="text" name="firstname" placeholder="First Name" id="n" required>
+    <input type="text" name="lastname" placeholder="Last Name" required
+    <label for="p">Phone number:</label>
+    <input type="phone" name="phone" placeholder="() __ ____" id="p">
+    <label for="e">E-mail:</label>
+    <input type="email" name="email" placeholder="Lady@aesthetic.com" id="e" required>
+    <label for="c">Country:</label>
+    <input type="text" name="country" placeholder="Country" id="c" required>
+    <label for="d">Department:</label>
+    <input type="text" name="department" placeholder="Department" id="d" required>
+    <label for="ci">City:</label>
+    <input type="text" name="city" placeholder="City" id="ci" required>
+    <label for="a">Address:</label>
+    <input type="text" name="address" placeholder="St 0 #0-00" id="a" required> <br>
+    <input name="Submit"        type="submit"  value="Submit" ></pre>
+   </form>
+  </body>
+  <footer>
+    <br>
+    <small>© 2020 Clothing Brand</small>
+  </footer>
+</html>
